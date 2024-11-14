@@ -13,6 +13,8 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    @product.name = @product.name.capitalize
+    @product.description = @product.description.capitalize
 
     if @product.save
       render json: @product, status: :created, location: @product
@@ -31,6 +33,7 @@ class ProductsController < ApplicationController
 
   def destroy
     @product.destroy
+    head :no_content
   end
 
   private
@@ -39,6 +42,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.expect(product: [:name, :price, :stock_quantity, :description])
+    params.require(:product).permit(:name, :price, :stock_quantity, :description)
   end
 end
