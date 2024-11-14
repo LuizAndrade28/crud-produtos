@@ -13,8 +13,6 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @product.name = @product.name.capitalize
-    @product.description = @product.description.capitalize
 
     if @product.save
       render json: @product, status: :created, location: @product
