@@ -1,4 +1,4 @@
-# README - Backend (Rails API)
+# Backend (Rails API)
 
 ## Descrição
 
