@@ -87,8 +87,8 @@ rails s
 - stock_quantity: Obrigatório, deve ser um número inteiro positivo.
 - description: Obrigatório.
 
-### CORS
+### Ambiente de desenvolvimento
 > [!CAUTION]
 > Atenção: isso não é recomendado em produção.
 
-O CORS está configurado para aceitar requisições de qualquer origem. 
+Para simplificação, o CORS está configurado para permitir todas as origens. Isso não é seguro para produção e deve ser ajustado conforme necessário.
