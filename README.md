@@ -12,11 +12,9 @@ Esse é o backend de uma aplicação CRUD de Produtos, desenvolvido em Ruby on R
 
 ### Pré-requisitos:
 
-Ruby (>= 3.3.1)
-
-Rails (>= 7.1.3)
-
-PostgreSQL (>= 1.1)
+- Ruby (>= 3.3.1)
+- Rails (>= 7.1.3)
+- PostgreSQL (>= 1.1)
 
 ## Configuração
 
