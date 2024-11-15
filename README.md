@@ -38,6 +38,10 @@ gem install bundler
 
 Agora você precisa instalar todas as gemas necessárias contidas no `GEMFILE`.
 
+```sh
+bundle install
+```
+
 ### 3. Configure o banco de dados:
 
 ```sh
